@@ -11,8 +11,8 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
             integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
             crossorigin="anonymous">
-        <link rel="stylesheet" href="./sass/main.scss">
         <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/main.min.css">
     </head>
     <body>
     <!--Navigation-->
@@ -376,14 +376,14 @@
                         </li>
                     </ul>
                 </div>
-                <div class="footer__form">
+                <div class="form">
                     <form action="#">
                         <p class="footer-social__title">Подпишитесь на рассылку</p>
-                        <div class="footer__form-top">
-                            <label></label><input type="email" name="mail" class="footer__input" placeholder="E-mail">
-                            <button type="submit" class="footer__btn">
+                        <div class="form-top">
+                            <label></label><input type="email" name="mail" class="form__input" placeholder="E-mail">
+                            <button type="submit" class="form__btn">
                                 Подписаться
-                                <svg class="footer-social__icon-btn">
+                                <svg class="form__icon">
                                     <use href="./images/icons.svg#icon-send-footer"></use>
                                 </svg>
                             </button>
@@ -396,50 +396,50 @@
         <!--Backdrop-->
         <div class="backdrop is-hidden" data-modal>
             <div class="modal">
-                <button type="button" class="modal-close-btn" data-modal-close>
-                    <svg class="modal-x">
+                <button type="button" class="modal__btn-close" data-modal-close>
+                    <svg class="modal__icon-close">
                         <use href="./images/icons.svg#icon-x" width="11" height="11"></use>
                     </svg>
                 </button>
                 <form action="#" class="modal-form">
-                    <p class="modal-form-head">Оставьте свои данные, мы вам перезвоним</p>
-                    <label class="modal-form-item">
+                    <p class="modal-form__title">Оставьте свои данные, мы вам перезвоним</p>
+                    <label class="modal-form__list">
                             Имя
-                        <span class="modal-form-name">
-                            <input type="text" name="user-name" class="modal-form-input" required>
-                            <svg class="icon-name-modal">
+                        <span class="modal-form__item">
+                            <input type="text" name="user-name" class="modal-form__input" required>
+                            <svg class="modal-form__icon">
                                 <use href="./images/icons.svg#icon-name-modal" width="12" height="12"></use>
                             </svg>
                         </span>
                     </label>
-                    <label class="modal-form-item">
+                    <label class="modal-form__list">
                         Телефон
-                        <span class="modal-form-name">
-                            <input type="tel" name="user-phone" class="modal-form-input" required>
-                            <svg class="icon-name-modal">
+                        <span class="modal-form__item">
+                            <input type="tel" name="user-phone" class="modal-form__input" required>
+                            <svg class="modal-form__icon">
                                 <use href="./images/icons.svg#icon-phone-modal" width="13" height="13"></use>
                             </svg>
                         </span>
                     </label>
-                    <label class="modal-form-item">
+                    <label class="modal-form__list">
                         Почта
-                        <span class="modal-form-name">
-                            <input type="email" name="user-email" class="modal-form-input" required>
-                            <svg class="icon-name-modal">
+                        <span class="modal-form__item">
+                            <input type="email" name="user-email" class="modal-form__input" required>
+                            <svg class="modal-form__icon">
                                 <use href="./images/icons.svg#icon-email-modal" width="15" height="12"></use>
                             </svg>
                         </span>
                     </label>
-                    <label class="modal-form-item-mesagge">
+                    <label class="modal-form__mesagge">
                         Комментарий
-                        <textarea name="user-message" class="modal-form-message" placeholder="Введите текст"></textarea>
+                        <textarea name="user-message" class="modal-form__text" placeholder="Введите текст"></textarea>
                     </label>
-                    <input type="checkbox" class="modal-form-checkbox visually-hidden" id="checkbox-policy" required>
-                    <label for="checkbox-policy" class="checkbox-policy">
-                        <svg class="icon-ok-modal">
+                    <input type="checkbox" class="modal-form__checkbox visually-hidden" id="checkbox-policy" required>
+                    <label for="checkbox-policy" class="modal-form__policy">
+                        <svg class="modal-form__icon-verification">
                             <use href="./images/icons.svg#icon-ok-modal"></use>
                         </svg>
-                        Соглашаюсь с рассылкой и принимаю <a class="checkbox-link" href="">Условия договора</a></label>
+                        Соглашаюсь с рассылкой и принимаю <a class="modal-form__link" href="">Условия договора</a></label>
                     <button type="submit" class="btn">Отправить</button>
                 </form>
             </div>
