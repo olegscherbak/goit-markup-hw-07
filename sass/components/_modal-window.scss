@@ -111,7 +111,6 @@
     color: rgba(117, 117, 117, 0.5);
   }
 }
-
 .modal-form__icon-verification {
   position: absolute;
   top: 50%;
@@ -123,14 +122,6 @@
   cursor: pointer;
   fill: var(--hero-color);
 }
-// .modal-form__checkbox:checked + .modal-form__policy::before {
-//   background-color: var(--accent-color);
-//   border: var(--accent-color);
-//   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-// }
-// .modal-form__checkbox:focus + .modal-form__policy::before {
-//   border: 2px solid var(--accent-color);
-// }
 .modal-form__policy {
   position: relative;
   font-style: normal;

@@ -10,7 +10,7 @@
   margin-bottom: 10px;
   width: 270px;
 }
-.features__item-right:not(:last-child) {
+.features__item:not(:last-child) {
   margin-right: 30px;
 }
 .features__text {
@@ -19,7 +19,7 @@
   letter-spacing: 0.03em;
   color: var(--title-color);
 }
-.features__specifics {
+.features__list {
   display: flex;
   justify-content: space-between;
 }
